@@ -21,5 +21,13 @@ module.exports = {
         $: require.resolve('jquery'),
         jQuery: require.resolve('jquery')
     }),
-],
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  }
 }
